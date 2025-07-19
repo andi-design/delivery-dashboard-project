@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>דשבורדים - חברת משלוחים</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f0f2f5;
+      --card-bg-color: #ffffff;
+      --primary-text-color: #333;
+      --header-color: #2c3e50;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+      --border-radius: 8px;
+      --header-bg-color: #34495e;
+    }
+
+    body {
+      font-family: 'Heebo', Arial, sans-serif;
+      direction: rtl;
+      background-color: var(--bg-color);
+      color: var(--primary-text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-header {
+      background-color: var(--header-bg-color);
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .dashboard-card {
+      background-color: var(--card-bg-color);
+      border-radius: var(--border-radius);
+      padding: 25px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px var(--shadow-color);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .dashboard-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--header-color);
+      margin-top: 0;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+
+    .iframe-wrapper {
+      position: relative;
+      /* Using a common 16:9 aspect ratio for dashboards */
+      padding-bottom: 56.25%; 
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--border-radius);
+      border: 1px solid #ddd;
+    }
+
+    .iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8em;
+      }
+      .container {
+        padding: 0 10px;
+      }
+      .dashboard-card {
+        padding: 15px;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <h1>מערכת מידע - חברת משלוחים</h1>
+  </header>
+
+  <main class="container">
+    <section class="dashboard-card">
+      <h2>דשבורד תפעולי</h2>
+      <div class="iframe-wrapper"><iframe title="דשבורד תפעולי" src="https://public.tableau.com/views/_17529573534170/sheet6?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"></iframe></div>
+    </section>
+    <section class="dashboard-card">
+      <h2>דשבורד ניהולי</h2>
+      <div class="iframe-wrapper"><iframe title="דשבורד ניהולי" src="https://public.tableau.com/views/_17529573748640/sheet7?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"></iframe></div>
+    </section>
+    <section class="dashboard-card">
+      <h2>דשבורד אסטרטגי</h2>
+      <div class="iframe-wrapper"><iframe title="דשבורד אסטרטגי" src="https://public.tableau.com/views/_17529579240140/sheet8?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"></iframe></div>
+    </section>
+  </main>
+</body>
+</html>
