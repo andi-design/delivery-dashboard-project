@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>דשבורדים - חברת משלוחים</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f0f2f5;
+      --card-bg-color: #ffffff;
+      --primary-text-color: #333;
+      --header-color: #2c3e50;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+      --border-radius: 8px;
+      --header-bg-color: #34495e;
+    }
+
+    body {
+      font-family: 'Heebo', Arial, sans-serif;
+      direction: rtl;
+      background-color: var(--bg-color);
+      color: var(--primary-text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-header {
+      background-color: var(--header-bg-color);
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .dashboard-card {
+      background-color: var(--card-bg-color);
+      border-radius: var(--border-radius);
+      padding: 25px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px var(--shadow-color);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .dashboard-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--header-color);
+      margin-top: 0;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8em;
+      }
+      .container {
+        padding: 0 10px;
+      }
+      .dashboard-card {
+        padding: 15px;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <h1>מערכת מידע - חברת משלוחים</h1>
+  </header>
+
+  <main class="container">
+    <section class="dashboard-card about-section">
+      <h2>אודות המערכת - SmartDelivery</h2>
+      <p>
+        המערכת משמשת לניהול כולל של תהליך ההזמנה – החל מרגע ביצוע ההזמנה באפליקציה, דרך שיבוץ שליח, מעקב אחר זמן המשלוח, ועד למענה של שירות הלקוחות ולמדידת שביעות רצון הלקוח.
+      </p>
+      <p>
+        המערכת כוללת נתונים תפעוליים כמו זמני משלוח בפועל, אזור היעד, שעה ותאריך ההזמנה; נתונים ניהוליים כמו שם נציג השירות וזמן תגובתו ונתונים אסטרטגיים כגון זיהוי לקוחות חדשים ומגמות גידול לפי אזורים. בעזרת מידע זה נוכל לייעל את פעילות החברה, לשפר את חווית הלקוח ולתכנן צעדים עתידיים להתרחבות ושיפור השירות.
+      </p>
+    </section>
+
+    <section class="dashboard-card">
+      <h2>דשבורד תפעולי</h2>
+      <div class='tableauPlaceholder' id='viz1752958008363' style='position: relative'><noscript><a href='#'><img alt='דשבורד תפעולי ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17529573534170&#47;sheet6&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='_17529573534170&#47;sheet6' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17529573534170&#47;sheet6&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1752958008363');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='620px';vizElement.style.maxWidth='1150px';vizElement.style.width='100%';vizElement.style.minHeight='787px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='620px';vizElement.style.maxWidth='1150px';vizElement.style.width='100%';vizElement.style.minHeight='787px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </section>
+    <section class="dashboard-card">
+      <h2>דשבורד ניהולי</h2>
+      <div class='tableauPlaceholder' id='viz1752958033005' style='position: relative'><noscript><a href='#'><img alt='דשבורד ניהולי ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17529573748640&#47;sheet7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='_17529573748640&#47;sheet7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17529573748640&#47;sheet7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1752958033005');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1450px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1187px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1450px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1187px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </section>
+    <section class="dashboard-card">
+      <h2>דשבורד אסטרטגי</h2>
+      <div class='tableauPlaceholder' id='viz1752958052668' style='position: relative'><noscript><a href='#'><img alt='דשבורד אסטרטגי ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17529579240140&#47;sheet8&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='_17529579240140&#47;sheet8' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_17529579240140&#47;sheet8&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1752958052668');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='950px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='950px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </section>
+  </main>
+</body>
+</html>
